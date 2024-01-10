@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, NavLink, Routes, Route} from 'react-router-dom';
 import { PizzaListPage } from './PizzaListPage';
 import { PizzaCreatePage } from './PizzaCreatePage';
+import { PizzaSinglePage } from './PizzaSinglePage';
+import {PizzaModPage} from './PizzaModPage';
+import {PizzaDeletePage} from './PizzaDeletePage';
 
 function App() {
   return(
@@ -26,6 +29,9 @@ function App() {
     <Routes>
       <Route path="/" element={<PizzaListPage/>} />
       <Route path="/uj-pizza" element={<PizzaCreatePage/>}/>
+      <Route path="/egy-pizza/:pizzaId" element={<PizzaSinglePage/>}/>
+      <Route path="/mod-pizza/:pizzaId" element={<PizzaModPage/>}/>
+      <Route path="/del-pizza/:pizzaId" element={<PizzaDeletePage/>}/>
     </Routes>
     </Router>
   );  

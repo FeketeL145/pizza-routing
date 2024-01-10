@@ -21,7 +21,7 @@ export function PizzaListPage(){
         {isFetchPending ? (<div className="spinner-border"></div>) : (<div>
                 <h2>Pizzák</h2>
                 {pizzaData.map((pizza) => (
-                    <NavLink key={pizza.id} to={`/${pizza.id}`}>
+                    <NavLink key={pizza.id} to={`/egy-pizza/${pizza.id}`}>
                     <div key = {pizza.id} className="card col-sm-3 d-inline-block m-1 p-2">
                             <h2 style={{ textAlign: 'center' }}>{pizza.name}</h2>
                             <p style={{ textAlign: 'center' }}>Gluténmentes: {pizza.isGlutenFree ? 'Igen' : 'Nem'}</p>
