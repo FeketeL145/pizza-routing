@@ -20,7 +20,8 @@ export function PizzaDeletePage() {
             .catch(error => console.error('Error:', error));
             }
         }>
-        <h1>Biztos hogy kitörli a pizzát?</h1>
+            <div className="p-5 m-auto text-center content bg-ivory">
+            <h1>Biztos hogy kitörli a pizzát?</h1>
         <div className="d-flex justify-content-between">
             <div className="w-50">
                 <button type="submit" className="btn btn-primary">Igen</button>
@@ -32,6 +33,8 @@ export function PizzaDeletePage() {
                         
             </div>
         </div>
+            </div>
+        
         </form>
     );
 }

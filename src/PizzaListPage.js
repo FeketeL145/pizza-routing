@@ -26,7 +26,7 @@ export function PizzaListPage(){
                             <h2 style={{ textAlign: 'center' }}>{pizza.name}</h2>
                             <p style={{ textAlign: 'center' }}>Gluténmentes: {pizza.isGlutenFree ? 'Igen' : 'Nem'}</p>
                             <div className="card-body">
-                                <img src={pizza.kepURL} alt={pizza.name} style={{ maxWidth: '80%', maxHeight: '80%', objectFit: 'cover', alignSelf: 'center' }} />
+                                <img src={pizza.kepURL} alt={pizza.name} style={{maxWidth: '80%', maxHeight: '150px', objectFit: 'cover', alignSelf: 'center' }} />
                             </div>
                     </div>
                     </NavLink>

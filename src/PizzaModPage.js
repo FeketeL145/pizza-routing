@@ -47,13 +47,14 @@ export function PizzaModPage() {
             })
     .then(response => response.json())
     .then(data => console.log(data))
+    .then(navigate('/'))
     .catch(error => console.error('Error:', error));
             }
         }>
             <div className="form-group row pb-3">
                 <label className="col-sm-3 col-form-label">Név:</label>
                     <div>
-                        <input type="text" name="name" className="form-control" value={pizzaData.name}/>
+                        <input type="text" name="name" className="form-control" placeholder={pizzaData.name}/>
                     </div>
             </div>
             <div className="form-group row pb-3">
@@ -103,7 +104,7 @@ export function PizzaModPage() {
             <div className="form-group row pb-3">
                 <label className="col-sm-3 col-form-label">Kép URL:</label>
                     <div>
-                        <input type="text" name="kepURL" className="form-control" value={pizzaData.kepURL}/>
+                        <input type="text" name="kepURL" className="form-control" placeholder={pizzaData.kepURL}/>
                     </div>
             </div>
             <div className="d-flex justify-content-between">
